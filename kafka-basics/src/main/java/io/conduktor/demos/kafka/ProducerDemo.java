@@ -19,7 +19,7 @@ public class ProducerDemo {
         Properties properties = new Properties();
 
         // connect to Localhost
-        properties.setProperty("bootstrap.servers", "localhost:9092");
+        properties.setProperty("bootstrap.servers", "localhost:9092,localhost:9093,localhost:9094");
 
         // set producer properties
         properties.setProperty("key.serializer", StringSerializer.class.getName());
